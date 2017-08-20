@@ -18,7 +18,7 @@ typedef struct epbuff{
 	int index;
 }epbuff_t,*epbuff_p,**epbuff_pp;
 
-
+//此实现方式是LT模式
 static epbuff_p alloc_buff(int fd) //此处开空间之后后面就要是ptr指向的一段空间
 {
 	epbuff_p ptr = (epbuff_p)malloc(sizeof(epbuff_t));
